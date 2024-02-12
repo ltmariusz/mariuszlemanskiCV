@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageModule } from './pages/home-page/home-page.module';
+// import { GeneralPageModule } from './pages/general-page/general-page.module';
 
 const routes: Routes = [
   {
     path:'', 
-    loadChildren:( ) => import('./pages/home-page/home-page.module').then(m => m.HomePageModule)
+    loadChildren:( ) => import('./pages/general-page/general-page.module').then(m => m.GeneralPageModule)
   }
 
 ];

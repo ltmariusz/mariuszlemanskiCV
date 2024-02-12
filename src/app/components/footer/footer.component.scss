@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.footer{
+    width: 100%;
+    background-color: $menuColor;
+    position: absolute;
+    bottom: 0;
+    height:50px; //zmienić również w generall padding-bottom
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.my-icons{
+    display: flex;
+    width:25px;
+    height:25px;
+    cursor: pointer;
+}
+#instagram{
+    margin-left: 12px;
+}
+#linkedin{
+    margin-left: 12px;
+}

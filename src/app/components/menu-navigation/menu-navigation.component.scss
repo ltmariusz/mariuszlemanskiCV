@@ -1,5 +1,71 @@
-.navigation{
-    display:flex;
+@import './../../../styles.scss';
+
+.navigation-bar-all {
+    display: flex
+}
+
+.navigation {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    background-color: $menuColor;
+    width: 100%;
+    justify-content: space-between // padding-top: 15px;
+        // padding-bottom: 15px;
+        // border-style: solid;
+        // border-bottom:0px
+}
+
+
+.navigation-left {
+    background-color: $menuColor;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.title-icon {
+    margin-top: 4px;
+    margin-right: 12px;
+    display: flex;
+    margin-bottom: 5px;
+    // background-color: #29317c;
+}
+
+
+.title-icon-image {
+    display: flex;
+    width: 30px;
+
+}
+
+.title-name {
+    color: #29317c;
+    width: 100%;
+
+}
+
+.center-space {
+    width: 30%
+}
+
+.navi-option {
+    // border-style: solid;
+    width: 100px;
+    height: 50px;
+    // border-left:5px
+}
+
+.navi-option-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // background-color: grey;
+
 }

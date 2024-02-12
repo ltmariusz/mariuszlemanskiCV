@@ -11,5 +11,10 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  redrictToInstagram() {
+    window.location.href = 'https://www.instagram.com/ltmariusz/'
+  }
+  redrictToLinkedIn() {
+    window.location.href = 'https://www.linkedin.com/in/mariusz-lema%C5%84ski/'
+  }
 }
