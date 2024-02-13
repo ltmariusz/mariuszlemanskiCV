@@ -1,0 +1,110 @@
+@import '../../../styles.scss';
+
+.background-technology{
+    background-image: url('./../../../assets/pictures/background-grey.png');
+    background-attachment: fixed;
+    background-position: center center;
+    // background-size:cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.technology-text{
+    padding-top:10px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    font-family:'Montserrat';
+    color:$menuColor
+}
+.all-technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #273134;
+    padding:15px 0px 15px 0px;
+    
+}
+.one-technology {
+    position: relative; /* Umożliwia pozycjonowanie pseudoelementów względem tego kontenera */
+    display: inline-block; /* Zapewnia, że kontener zachowuje wymiary obrazka */
+}
+.one-technology::before {
+    content: ''; /* Wymagane do wyświetlenia pseudoelementu */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Twoje preferencje dotyczące cienia */
+    // filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    opacity: 0; /* Cień jest niewidoczny, dopóki nie najedzie się na element */
+    transition: opacity 0.3s ease-in-out; /* Płynne pojawianie się cienia */
+}
+.one-technology:hover::before {
+    opacity: 1; /* Cień staje się widoczny przy najechaniu */
+}
+
+.img-one-technology {
+    width: 80px;
+    margin:0px 30px 0px 30px
+}
+
+#javascript-logo {
+    // padding-top: px;
+    width: 72px;
+}
+.img-one-technology:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Cień wokół obrazka */
+    margin: 5px; /* Twoje wcześniejsze ustawienia marginesu */
+    /* Dalsze style, jeśli są potrzebne */
+}
+
+
+// @keyframes vineGrow {
+//     0% {
+//         transform: scaleY(0) rotate(0deg);
+//         opacity: 0;
+//       }
+//       50% {
+//         transform: scaleY(0.7) rotate(20deg);
+//         opacity: 0.5;
+//       }
+//       100% {
+//         transform: scaleY(1) rotate(0deg);
+//         opacity: 1;
+//       }
+//   }
+  
+//   .vine {
+//     width: 2px; /* Dostosuj szerokość pnączy */
+//     background-color: black;
+//     animation-fill-mode: forwards;
+//     animation: vineGrow 0.5s ease-in-out;
+//     bottom: 0;
+//   }
+
+//   .image-container {
+//     position: relative;
+//     display: inline-block;
+//   }
+  
+//   .image-container img {
+//     display: block; /* Zapobiega domyślnym marginesom wokół obrazu */
+//   }
+  
+//   .left-vine, .right-vine {
+//     position: absolute;
+//     top: 0;
+//     height: 100%;
+//   }
+  
+//   .left-vine {
+//     transform-origin: bottom left;
+//     left: 50%; /* Dostosuj, aby pasowało do twojego układu */
+//   }
+  
+//   .right-vine {
+//     transform-origin: bottom right;
+//     right: 50%; /* Dostosuj, aby pasowało do twojego układu */
+//   }

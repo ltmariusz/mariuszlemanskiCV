@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TitleWithPictureModule } from 'src/app/components/title-with-picture/title-with-picture.module';
+import { TechnologyBarModule } from 'src/app/components/technology-bar/technology-bar.module';
 
 const routes: Routes =[
   {
@@ -18,7 +19,8 @@ const routes: Routes =[
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    TitleWithPictureModule
+    TitleWithPictureModule,
+    TechnologyBarModule
   ]
 })
 export class HomePageModule { }
