@@ -1,44 +1,14 @@
 <div>
     <app-cv-picture></app-cv-picture>
-    <div>
-        2022-01
-        - obecnie
-        Junior Front-End Developer
-        Daw-Systems
-        Projektowanie aplikacji internetowych za pomocą: 
-        Angular, TypeScript, JavaScript, HTML, CSS, Nebular, 
-        Material Design (czasami również NodeJs, Postgress, SQL)       
-    </div>
-    <div>
-        2019-10
-        - 2023-08
-        Nauczyciel informatyki
-        Zespół Szkół Ekonomiczno Odzieżowych w Gnieźnie
-        Prowadzenie zawodowych lekcji teoretycznych oraz praktycznych
-        z zakresu informatyki.
-    </div>
-    <div>
-        2018-08
-        - 2021-07
-        Animator
-        Park trampolin Jump World/Chłodex JumpNow
-        Nauczanie podstaw akrobatyki na trampolinach.
-        Organizacja zajęć dla grup osób. Praca z dziećmi, młodzieżą i dorosłymi. 
-    </div>
-    <div>
-        2019-07
-        - 2019-09
-        Erasmus+ Praktyki zawodowe
-        Softconcept, Lizbona
-        Programowanie stron webowych za pomocą PHP, JS, HTML/CSS
-        Praca w języku angielskim
-    </div>
-    <div>
-        2016-05
-        - 2018-08
-        Prace różne
-        Lech-Pol 2016.05-2016.08: pracownik produkcji
-        McDonalds 2017.04-2018.04: pracownik restauracji
-        Empik 2018.04-2018.08: doradca klienta
+    <div *ngFor="let item of experience; let i = index" class="experience" [ngClass]="{'experience-second': i % 2 === 1}">
+        <div>
+            <div class="date-from-of-job">{{item.dateFrom}} </div>
+            <div class="date-to-of-job">{{item.dateTo}}</div>
+            <div class="title-of-job">{{item.title}} </div>
+            <div class="company-of-job">{{item.company}} </div>
+            <div class="description-of-job">{{item.description}}</div>
+        </div>
+        <img class="picture-of-job" src="./../../../assets/pictures/experience-photos/{{item.pictureName}}">
+        <div class="object"></div>
     </div>
 </div>
