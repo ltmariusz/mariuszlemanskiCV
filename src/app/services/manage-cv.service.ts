@@ -8,7 +8,7 @@ export interface Experience {
   title: string;
   company: string;
   description: string; // Popraw literówkę z "descroption" na "description"
-  pictureName?:string
+  pictureName?:string | Array<string>
 }
 
 @Injectable({
