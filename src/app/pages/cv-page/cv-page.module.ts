@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CvPageComponent } from './cv-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CvPictureModule } from 'src/app/components/cv-picture/cv-picture.module';
+import { ExtraActivityModule } from 'src/app/components/extra-activity/extra-activity.module';
 
 const routes: Routes =[
   {
@@ -18,7 +19,8 @@ const routes: Routes =[
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    CvPictureModule
+    CvPictureModule,
+    ExtraActivityModule
   ]
 })
 export class CvPageModule { }

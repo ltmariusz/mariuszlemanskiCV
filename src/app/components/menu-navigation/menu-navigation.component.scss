@@ -55,8 +55,18 @@
 .navi-option {
     // border-style: solid;
     width: 100px;
-    height: 50px;
+    height: 40px;
     // border-left:5px
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.navi-option:hover {
+    background-image: linear-gradient(45deg, #282279 0%, #2ebf91 80%);
+    background-image: linear-gradient(toright, #b6fbff, #83a4d4);
+
 }
 
 .navi-option-text {

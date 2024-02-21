@@ -12,7 +12,7 @@ const routes: Routes = [
     component: GeneralPageComponent,
     children: [
       {
-        path: 'home',
+        path: '',
         loadChildren: () => import('./../home-page/home-page.module').then(m => m.HomePageModule)
       },
       {
