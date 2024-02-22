@@ -53,20 +53,34 @@
 }
 
 .navi-option {
-    // border-style: solid;
+    position: relative;
     width: 100px;
     height: 40px;
-    // border-left:5px
     cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 50px;
+    // background-color: ;
+    overflow: hidden; /* Zapobiega wyświetlaniu się poza granicami */
+    z-index: 1; /* Ustawienie kontekstu stosowania */
 }
 
-.navi-option:hover {
-    background-image: linear-gradient(45deg, #282279 0%, #2ebf91 80%);
-    background-image: linear-gradient(toright, #b6fbff, #83a4d4);
+.navi-option::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #282279 0%, #2ebf91 80%);
+    transition: opacity 1s; /* Przejście dla opacity zamiast tła */
+    opacity: 0; /* Początkowo niewidoczny */
+    border-radius: 50px; /* Aby dopasować do rodzica */
+    z-index: -1; /* Upewnij się, że tekst pozostaje na wierzchu */
+}
 
+.navi-option:hover::after {
+    opacity: 1; /* Pełna widoczność przy najechaniu */
 }
 
 .navi-option-text {
@@ -77,5 +91,7 @@
     align-items: center;
 
     // background-color: grey;
-
+}
+.navi-option-text{
+    // transform:
 }

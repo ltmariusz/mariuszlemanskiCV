@@ -10,14 +10,42 @@ export class TitleWithPictureComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    const typed = new Typed('#element', {
-      strings: ["Za","Zabawny","Zaskakujący","Zaje","Zajadły","Kreatywny" ],
-      // ustawić lepsze słowa
+  ngOnInit() {
+    this.initTyped();
+  }
+
+  initTyped() {
+    let options1 = {
+      strings: ["To świetnie trafiłeś!"],
       typeSpeed: 50,
-      loop:true
+      showCursor: true,
+      cursorChar: '|',
+      // showCursor: false,
+
+      onComplete: () => {
+        // Ukryj kursor po zakończeniu pisania
+        // cursor.hidden = true; // Może nie działać w zależności od wersji Typed.js
+        // Lub bezpośrednie ukrycie elementu kursora
       
-    });
+      },
+      contentType:'html'
+    };
+
+    new Typed('#element1', options1);
+  }
+
+  initTyped2() {
+    const options2 = {
+      strings: ["Właśnie znalazłeś idealnego programistę^1000", "Właśnie znalazłeś idealnego pracownika"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      showCursor: true,
+      cursorChar: '|',
+      loop: false,
+      startDelay: 500
+    };
+
+    new Typed('#element2', options2);
   }
 
 }
