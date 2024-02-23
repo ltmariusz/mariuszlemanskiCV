@@ -8,7 +8,8 @@ import { TechnologyBarModule } from 'src/app/components/technology-bar/technolog
 const routes: Routes =[
   {
   path:'',
-  component:HomePageComponent
+  component:HomePageComponent,
+  data: { animation: 'HomePage' }
   }
 ]
 

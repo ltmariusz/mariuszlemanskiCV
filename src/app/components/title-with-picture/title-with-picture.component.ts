@@ -11,24 +11,30 @@ export class TitleWithPictureComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.initTyped();
+    const typedText = new Typed(document.getElementById('typedText'), {
+      strings: ['Programistę^2000','Developera^1000','Pracownika^1000'],
+      typeSpeed: 100,
+      backSpeed: 40,
+      loop: true,
+    });
   }
 
+  
   initTyped() {
     let options1 = {
-      strings: ["To świetnie trafiłeś!"],
-      typeSpeed: 50,
-      showCursor: true,
-      cursorChar: '|',
-      // showCursor: false,
+      strings: ['git push --force ^1000\n `pushed to origin with option force`'],
+      // typeSpeed: 50,
+      // showCursor: true,
+      // cursorChar: '|',
+      // // showCursor: false,
 
-      onComplete: () => {
-        // Ukryj kursor po zakończeniu pisania
-        // cursor.hidden = true; // Może nie działać w zależności od wersji Typed.js
-        // Lub bezpośrednie ukrycie elementu kursora
+      // onComplete: () => {
+      //   // Ukryj kursor po zakończeniu pisania
+      //   // cursor.hidden = true; // Może nie działać w zależności od wersji Typed.js
+      //   // Lub bezpośrednie ukrycie elementu kursora
       
-      },
-      contentType:'html'
+      // },
+      // contentType:'html'
     };
 
     new Typed('#element1', options1);
@@ -42,7 +48,8 @@ export class TitleWithPictureComponent implements OnInit {
       showCursor: true,
       cursorChar: '|',
       loop: false,
-      startDelay: 500
+      startDelay: 500,
+
     };
 
     new Typed('#element2', options2);

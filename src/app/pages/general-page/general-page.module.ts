@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FooterModule } from 'src/app/components/footer/footer.module';
 import { MenuNavigationModule } from 'src/app/components/menu-navigation/menu-navigation.module';
 import { TitleWithPictureModule } from 'src/app/components/title-with-picture/title-with-picture.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -35,7 +36,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FooterModule,
     MenuNavigationModule,
-    TitleWithPictureModule
+    TitleWithPictureModule,
+    // BrowserAnimationsModule
   ],
   exports: [
     GeneralPageComponent

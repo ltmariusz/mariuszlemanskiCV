@@ -17,7 +17,17 @@
 }
 #instagram{
     margin-left: 12px;
+    transition: 1s;
+
 }
+#instagram:hover{
+    transform: rotateY(180deg);
+}
+
 #linkedin{
     margin-left: 12px;
+    transition: 1s;
+}
+#linkedin:hover{
+    transform: rotateY(180deg);
 }

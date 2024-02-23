@@ -2,8 +2,9 @@
     <div class="container">
 
         <app-menu-navigation></app-menu-navigation>
-        <router-outlet></router-outlet>
-
+        <div class="app-container" [@slideFade]="currentAnimation">
+            <router-outlet></router-outlet>
+        </div>
     </div>
     <app-footer></app-footer>
 </div>

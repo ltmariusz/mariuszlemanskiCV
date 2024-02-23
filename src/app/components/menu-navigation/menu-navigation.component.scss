@@ -73,14 +73,19 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(45deg, #282279 0%, #2ebf91 80%);
-    transition: opacity 1s; /* Przejście dla opacity zamiast tła */
+    transform: scale(0.5);
+    transition: opacity 0.5s, transform 0.5s ease-in-out; /* Łączymy przejścia */
+    transform-origin: center;
     opacity: 0; /* Początkowo niewidoczny */
     border-radius: 50px; /* Aby dopasować do rodzica */
     z-index: -1; /* Upewnij się, że tekst pozostaje na wierzchu */
+
 }
 
 .navi-option:hover::after {
     opacity: 1; /* Pełna widoczność przy najechaniu */
+    transform: scale(1, 1);
+
 }
 
 .navi-option-text {

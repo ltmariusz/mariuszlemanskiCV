@@ -8,7 +8,8 @@ import { ExtraActivityModule } from 'src/app/components/extra-activity/extra-act
 const routes: Routes =[
   {
   path:'',
-  component:CvPageComponent
+  component:CvPageComponent,
+  data: { animation: 'CvPage' }
   }
 ]
 
