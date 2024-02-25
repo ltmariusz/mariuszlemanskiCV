@@ -2,9 +2,9 @@
     <div class="container">
 
         <app-menu-navigation></app-menu-navigation>
-        <div class="app-container" [@slideFade]="currentAnimation">
-            <router-outlet></router-outlet>
-        </div>
+        <div [@routeAnimations]="prepareRoute(outlet)" >
+            <router-outlet #outlet="outlet"></router-outlet>
+          </div>
     </div>
     <app-footer></app-footer>
 </div>

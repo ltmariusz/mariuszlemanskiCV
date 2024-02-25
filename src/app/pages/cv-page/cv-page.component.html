@@ -1,5 +1,6 @@
 <div>
     <app-cv-picture></app-cv-picture>
+    <app-extra-activity></app-extra-activity>
     <div *ngFor="let item of experience; let i = index" class="experience" [ngClass]="{'experience-second': i % 2 === 1}">
         <div>
             <div class="date-from-of-job">{{item.dateFrom}} </div>
@@ -16,7 +17,7 @@
                 </div>
             <!-- </div> -->
         </ng-template>
-        <app-extra-activity></app-extra-activity>
+
         <!-- <div class="object"></div> -->
     </div>
     

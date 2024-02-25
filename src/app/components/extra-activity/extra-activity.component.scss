@@ -1,0 +1,9 @@
+@import '../../../styles.scss';
+.about-me{
+    background-color: $menuColor;
+    padding: 15px;
+}
+.about-me::first-line{
+margin-left: 50px;
+color: blue;
+}
