@@ -1,0 +1,56 @@
+@import '/src/styles.scss';
+.all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.box-for-project {
+    // width: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: $menuColor;
+    margin: 10px;
+    height: 240px;
+    width: 280px;
+    border: solid 5px #1f1f1f;
+    justify-content: space-between;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3c3c;
+    color: $menuColor;
+    width: 100%;
+    font-size: large;
+    // font-weight: bolder;
+    font-family: 'Montserrat';
+    height: 40px;
+
+}
+
+.project-description {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Dodane */
+}
+
+.project-image {
+    width: 80px;
+}
+
+.project-technology {}

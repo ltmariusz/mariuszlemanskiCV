@@ -1,12 +1,30 @@
-.background{
-    height: 80vh; /* Twoja wysokość */
+@import '/src/styles.scss';
+
+.background {
+    height: 80vh;
+    /* Twoja wysokość */
     max-height: 380px;
     // max-width: 1200px;
-    width: 100%; /* Szerokość na całą stronę */
+    width: 100%;
+    /* Szerokość na całą stronę */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../../assets/pictures/CV3.png");
+    background-image: url("../../../assets/pictures/CV4.png");
     background-position: center;
     background-size: cover;
+    color: $menuColor;
+}
+
+.placeholder-left-cv {
+    width: 52%
+}
+
+.title-cv {
+    width: 30%;
+    font-size: xx-large;
+}
+
+.placeholder-right-cv {
+    width: 30%
 }

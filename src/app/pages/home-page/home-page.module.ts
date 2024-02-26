@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TitleWithPictureModule } from 'src/app/components/title-with-picture/title-with-picture.module';
 import { TechnologyBarModule } from 'src/app/components/technology-bar/technology-bar.module';
+import { HomeProjectsModule } from 'src/app/components/home-projects/home-projects.module';
 
 const routes: Routes =[
   {
@@ -21,7 +22,8 @@ const routes: Routes =[
     CommonModule,
     RouterModule.forChild(routes),
     TitleWithPictureModule,
-    TechnologyBarModule
+    TechnologyBarModule,
+    HomeProjectsModule
   ]
 })
 export class HomePageModule { }
