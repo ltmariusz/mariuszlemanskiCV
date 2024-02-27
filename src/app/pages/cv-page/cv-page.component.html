@@ -3,8 +3,10 @@
     <app-extra-activity></app-extra-activity>
     <div *ngFor="let item of experience; let i = index" class="experience" [ngClass]="{'experience-second': i % 2 === 1}">
         <div>
-            <div class="date-from-of-job">{{item.dateFrom}} </div>
-            <div class="date-to-of-job">{{item.dateTo}}</div>
+            <div stule="display:flex;">
+                <div class="date-from-of-job">{{item.dateFrom}} </div>
+                <div class="date-to-of-job">{{item.dateTo}}</div>
+            </div>
             <div class="title-of-job">{{item.title}} </div>
             <div class="company-of-job">{{item.company}} </div>
             <div class="description-of-job">{{item.description}}</div>

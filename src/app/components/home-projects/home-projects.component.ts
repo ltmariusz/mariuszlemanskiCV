@@ -24,7 +24,7 @@ export class HomeProjectsComponent implements OnInit {
       {
         name: "Cv (to)",
         description: "strona przedstawiająca informacje o mnie",
-        img: 'icon-code.png',
+        img: 'icon-code.svg',
         technology: "Angular",
         url:"mariuszlemanski.com"
       },

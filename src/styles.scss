@@ -14,4 +14,21 @@ body { margin: 0;}
     font-family: 'BioRhyme';
     src: url('./assets/fonts/BioRhyme/BioRhyme-Regular.ttf');
 }
-$menuColor: #ebebeb
+$menuColor: #ebebeb;
+
+/* Stylizacja paska przewijania dla wszystkich elementów i okna przeglądarki */
+::-webkit-scrollbar {
+    width: 8px; /* szerokość paska przewijania */
+}
+
+::-webkit-scrollbar-track {
+    background: #747c91; /* kolor tła ścieżki paska przewijania */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #25263C; /* kolor paska przewijania */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* kolor paska przewijania przy najechaniu */
+}
