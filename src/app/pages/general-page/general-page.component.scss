@@ -1,20 +1,22 @@
-*{
+* {
     font-family: 'BioRhyme';
 }
 
-.background{
+.background {
     // background-color: rgb(230, 230, 230);
     // background: rgb(22,30,34);
-    background-image: linear-gradient( 45deg, #282279 0%,  #2ebf91 80% );
+    background-image: linear-gradient(45deg, #282279 0%, #2ebf91 80%);
     background-image: linear-gradient(toright, #b6fbff, #83a4d4);
     position: relative;
     width: 100%;
     min-height: 100%;
 }
-.container{
+
+.container {
     padding-bottom: 50px;
 
 }
+
 // .background{
 //     height: 100%;
 //     display: flex;
@@ -26,3 +28,8 @@
 //     background-size: cover;
 //     background-repeat: no-repeat;
 // }
+.loading {
+    height: 10000px;
+    width: 1000px;
+    background-color: red;
+}

@@ -40,7 +40,7 @@ import { filter, map } from 'rxjs';
           })
         ]),
         query(':enter', [
-          style({ left: '100%'})
+          style({ left: '100%' })
         ]),
         query(':leave', animateChild()),
         group([
@@ -48,13 +48,13 @@ import { filter, map } from 'rxjs';
             animate('300ms ease-out', style({ left: '-100%', opacity: 0 }))
           ]),
           query(':enter', [
-            animate('300ms ease-out', style({ left: '0%'}))
+            animate('300ms ease-out', style({ left: '0%' }))
           ])
         ]),
         query(':enter', animateChild()),
       ])
     ])
-  
+
   ]
 })
 export class GeneralPageComponent implements OnInit {
@@ -75,15 +75,30 @@ export class GeneralPageComponent implements OnInit {
         }
         return ''; // Domyślna wartość, jeśli nie ma danych animacji
       })
-      ).subscribe((animation: string) => {
-        this.currentAnimation = animation;
-        this.cdr.detectChanges(); // Wywołaj wykrywanie zmian
-      });
+    ).subscribe((animation: string) => {
+      this.currentAnimation = animation;
+      this.cdr.detectChanges(); // Wywołaj wykrywanie zmian
+    });
   }
+
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
   }
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
+
+
+    // //////////////////////////////////////Not working
+
+  isLoading = false;
+
+  onActivate(event: any) {
+    this.isLoading = false;
+  }
+
+  onDeactivate(event: any) {
+    this.isLoading = true;
+  }
+  ///////////////////////////////////////////////////////
 }
