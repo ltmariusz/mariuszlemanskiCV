@@ -4,24 +4,24 @@ import { CvPageComponent } from './cv-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CvPictureModule } from 'src/app/components/cv-picture/cv-picture.module';
 import { ExtraActivityModule } from 'src/app/components/extra-activity/extra-activity.module';
+import { CvJobsModule } from 'src/app/components/cv-jobs/cv-jobs.module';
 
-const routes: Routes =[
+const routes: Routes = [
   {
-  path:'',
-  component:CvPageComponent,
-  data: { animation: 'CvPage' }
-  }
-]
+    path: '',
+    component: CvPageComponent,
+    data: { animation: 'CvPage' },
+  },
+];
 
 @NgModule({
-  declarations: [
-    CvPageComponent
-  ],
+  declarations: [CvPageComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     CvPictureModule,
-    ExtraActivityModule
-  ]
+    ExtraActivityModule,
+    CvJobsModule,
+  ],
 })
-export class CvPageModule { }
+export class CvPageModule {}

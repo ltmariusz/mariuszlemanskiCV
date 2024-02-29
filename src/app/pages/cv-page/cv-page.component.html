@@ -1,26 +1,5 @@
 <div>
-    <app-cv-picture></app-cv-picture>
-    <app-extra-activity></app-extra-activity>
-    <div *ngFor="let item of experience; let i = index" class="experience" [ngClass]="{'experience-second': i % 2 === 1}">
-        <div>
-            <div stule="display:flex;">
-                <div class="date-from-of-job">{{item.dateFrom}} </div>
-                <div class="date-to-of-job">{{item.dateTo}}</div>
-            </div>
-            <div class="title-of-job">{{item.title}} </div>
-            <div class="company-of-job">{{item.company}} </div>
-            <div class="description-of-job">{{item.description}}</div>
-        </div>
-        <img *ngIf="isString(item.pictureName); else multipleImagesBlock" class="picture-of-job" src="./../../../assets/pictures/experience-photos/{{item.pictureName}}">
-        <ng-template #multipleImagesBlock>
-            <!-- <div > -->
-                <div *ngFor="let picture of getPictureNames(item.pictureName)" class="experience-photo-container">
-                    <img src="./../../../assets/pictures/experience-photos/{{picture}}" class="picture-of-few-jobs"> 
-                </div>
-            <!-- </div> -->
-        </ng-template>
-
-        <!-- <div class="object"></div> -->
-    </div>
-    
+  <app-cv-picture></app-cv-picture>
+  <app-extra-activity></app-extra-activity>
+  <app-cv-jobs></app-cv-jobs>
 </div>

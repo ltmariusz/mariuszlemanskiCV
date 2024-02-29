@@ -6,6 +6,7 @@
             <router-outlet #outlet="outlet" (activate)="onActivate($event)"
                 (deactivate)="onDeactivate($event)"></router-outlet>
         </div>
+        <!-- ?not working -->
         <div *ngIf="isLoading" class="loading">ŁADOWANIE</div>
     </div>
     <app-footer></app-footer>
