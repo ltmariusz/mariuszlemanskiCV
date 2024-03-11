@@ -39,6 +39,6 @@ export class HomeProjectsComponent implements OnInit {
   }
 
   redrictTo(url: string) {
-    this.router.navigate([url]);
+    window.open(url, '_blank');
   }
 }
