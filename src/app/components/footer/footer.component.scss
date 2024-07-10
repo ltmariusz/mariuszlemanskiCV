@@ -1,33 +1,33 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
-.footer{
-    width: 100%;
-    background-color: $menuColor;
-    position: absolute;
-    bottom: 0;
-    height:50px; //zmienić również w generall padding-bottom
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}.my-icons{
-    display: flex;
-    width:25px;
-    height:25px;
-    cursor: pointer;
+.footer {
+  width: 100%;
+  background-color: $menuColor;
+  position: absolute;
+  bottom: 0;
+  height: 50px; //zmienić również w generall padding-bottom
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#instagram{
-    margin-left: 12px;
-    transition: 1s;
+.my-icons {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+#instagram img {
+  margin-left: 12px;
+  transition: 1s;
+}
+#instagram img:hover {
+  transform: rotateY(180deg);
+}
 
+#linkedin img {
+  margin-left: 12px;
+  transition: 1s;
 }
-#instagram:hover{
-    transform: rotateY(180deg);
-}
-
-#linkedin{
-    margin-left: 12px;
-    transition: 1s;
-}
-#linkedin:hover{
-    transform: rotateY(180deg);
+#linkedin img:hover {
+  transform: rotateY(180deg);
 }

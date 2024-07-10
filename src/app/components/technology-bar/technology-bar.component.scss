@@ -1,65 +1,68 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
-.background-technology{
-    background-image: url('./../../../assets/pictures/background-grey.png');
-    background-attachment: fixed;
-    background-position: center center;
-    // background-size:cover;
-    background-repeat: no-repeat;
-    height: 200px;
+.background-technology {
+  background-image: url("./../../../assets/pictures/background-grey.png");
+  background-attachment: fixed;
+  background-position: center center;
+  // background-size:cover;
+  background-repeat: no-repeat;
+  height: 200px;
 }
-.technology-text{
-    padding-top:10px;
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: bold;
-    font-family:'Montserrat';
-    color:$menuColor
+.technology-text {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: $menuColor;
 }
 .all-technology {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // background-color: #273134;
-    padding:15px 0px 15px 0px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: #273134;
+  padding: 15px 0px 15px 0px;
 }
 .one-technology {
-    position: relative; /* Umożliwia pozycjonowanie pseudoelementów względem tego kontenera */
-    display: inline-block; /* Zapewnia, że kontener zachowuje wymiary obrazka */
-}
-.one-technology::before {
-    content: ''; /* Wymagane do wyświetlenia pseudoelementu */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Twoje preferencje dotyczące cienia */
-    // filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    opacity: 0; /* Cień jest niewidoczny, dopóki nie najedzie się na element */
-    transition: opacity 0.3s ease-in-out; /* Płynne pojawianie się cienia */
-}
-.one-technology:hover::before {
-    opacity: 1; /* Cień staje się widoczny przy najechaniu */
+  position: relative; /* Umożliwia pozycjonowanie pseudoelementów względem tego kontenera */
+  display: inline-block; /* Zapewnia, że kontener zachowuje wymiary obrazka */
+  margin: 0px 30px 0px 30px;
 }
 
 .img-one-technology {
-    width: 80px;
-    margin:0px 30px 0px 30px
+  width: 80px;
+  transition: 0.2s;
 }
 
 #javascript-logo {
-    // padding-top: px;
-    width: 72px;
+  // padding-top: px;
+  width: 72px;
 }
-.img-one-technology:hover {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Cień wokół obrazka */
-    margin: 5px; /* Twoje wcześniejsze ustawienia marginesu */
-    /* Dalsze style, jeśli są potrzebne */
+.all-technology .one-technology:nth-of-type(1) .img-one-technology {
+  filter: drop-shadow(0px 0px 0px #e65100);
 }
-
+.all-technology .one-technology:nth-of-type(2) .img-one-technology {
+  filter: drop-shadow(0px 0px 0px #0277bd);
+}
+.all-technology .one-technology:nth-of-type(3) .img-one-technology {
+  filter: drop-shadow(0px 0px 0px #d6ba32);
+}
+.all-technology .one-technology:nth-of-type(4) .img-one-technology {
+  filter: drop-shadow(0px 0px px #e23237);
+}
+.all-technology .one-technology:nth-of-type(1):hover .img-one-technology {
+  filter: drop-shadow(0px 0px 20px #e65100);
+}
+.all-technology .one-technology:nth-of-type(2):hover .img-one-technology {
+  filter: drop-shadow(0px 0px 20px #0277bd);
+}
+.all-technology .one-technology:nth-of-type(3):hover .img-one-technology {
+  filter: drop-shadow(0px 0px 20px #d6ba32);
+}
+.all-technology .one-technology:nth-of-type(4):hover .img-one-technology {
+  filter: drop-shadow(0px 0px 20px #e23237);
+}
 
 // @keyframes vineGrow {
 //     0% {
@@ -75,7 +78,7 @@
 //         opacity: 1;
 //       }
 //   }
-  
+
 //   .vine {
 //     width: 2px; /* Dostosuj szerokość pnączy */
 //     background-color: black;
@@ -88,22 +91,22 @@
 //     position: relative;
 //     display: inline-block;
 //   }
-  
+
 //   .image-container img {
 //     display: block; /* Zapobiega domyślnym marginesom wokół obrazu */
 //   }
-  
+
 //   .left-vine, .right-vine {
 //     position: absolute;
 //     top: 0;
 //     height: 100%;
 //   }
-  
+
 //   .left-vine {
 //     transform-origin: bottom left;
 //     left: 50%; /* Dostosuj, aby pasowało do twojego układu */
 //   }
-  
+
 //   .right-vine {
 //     transform-origin: bottom right;
 //     right: 50%; /* Dostosuj, aby pasowało do twojego układu */
