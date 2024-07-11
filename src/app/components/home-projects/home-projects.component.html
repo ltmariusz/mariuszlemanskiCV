@@ -1,17 +1,29 @@
 <div class="all-projects">
   <div *ngFor="let project of listOfProject" class="project">
     <div class="box-for-project" (click)="redrictTo(project.url!)">
-      <div class="project-name">{{ project.name }}</div>
+      <div class="project-name">
+        <div class="code-animation"></div>
+        <div>{{ project.name }}</div>
+      </div>
       <div class="project-description">{{ project.description }}</div>
       <div class="container-for-image">
         <img
           src="../../../assets/pictures/{{ project.img }}"
           class="project-image"
+          [ngStyle]="{
+            filter:
+              project.isHovered === true
+                ? 'drop-shadow(0px 0px 16px' + project.color + ')'
+                : 'none'
+          }"
+          (mouseenter)="project.isHovered = true"
+          (mouseleave)="project.isHovered = false"
         />
       </div>
       <div class="project-technology">{{ project.technology }}</div>
     </div>
   </div>
+
   <!-- <div>
     <svg
       version="1.1"
