@@ -5,9 +5,15 @@
   display: flex;
   height: 300px;
   width: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
 }
-.experience > div > div {
-  padding: 15px;
+
+.experience>div>div {
+  // Tymczasowe zakomentowane
+  // padding: 15px;
+
 }
 
 .experience-second {
@@ -18,25 +24,53 @@
 
 .dates-of-jobs {
   display: flex;
+  position: absolute;
   width: 100%;
-  background-color: red;
-}
-.date-from-of-job {
-}
-
-.date-to-of-job {
-}
-
-.title-of-job {
+  height: 50px;
+  background-color: #25263C;
+  color: white;
+  overflow: hidden;
+  align-items: center;
+  padding: 0 15px;
 }
 
-.company-of-job {
+.experience-second .dates-of-jobs {
+  padding-left: 300px;
+
 }
 
-.description-of-job {
+// .dates-of-jobs {
+
+//   display: flex;
+//   // position: relative;
+//   // top:0;
+//   // left:0;
+//   // width: 100vw;
+//   padding: 12px 0;
+//   background-color: red;
+//   overflow: hidden;
+// }
+
+
+.infromation-of-job {
+  // padding-top: 50px;
+  transform: translateY( 50px);
+  padding: 0 15px;
 }
+
+.date-from-of-job {}
+
+.date-to-of-job {}
+
+.title-of-job {}
+
+.company-of-job {}
+
+.description-of-job {}
 
 .picture-of-job {
+  width: 300px;
+  height: 300px;
   clip-path: polygon(0% 100%, 15% 0%, 100% 0%, 100% 100%);
 }
 
@@ -67,8 +101,7 @@
 .picture-of-jobs:first-child {
   position: absolute;
   // left:0px;
-  width: 300px;
-  height: 300px;
+
   // background-color: antiquewhite;
   z-index: 1;
   clip-path: polygon(0% 100%, 15% 0%, 100% 0%, 100% 100%);
@@ -76,8 +109,7 @@
 
 .picture-of-jobs:nth-child(2) {
   position: absolute;
-  width: 300px;
-  height: 300px;
+
   //   background-color:brown;
   z-index: 2;
   transform: translateX(100px);
