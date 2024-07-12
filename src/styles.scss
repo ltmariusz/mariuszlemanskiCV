@@ -1,34 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
-body { margin: 0;}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  //   background-color: red;
+  margin: 0;
+}
 
 // *{
 //     font-family: 'BioRyhme', sans-serif !important;
 // }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/Montserrat/static/Montserrat-Black.ttf');
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/static/Montserrat-Black.ttf");
 }
 @font-face {
-    font-family: 'BioRhyme';
-    src: url('./assets/fonts/BioRhyme/BioRhyme-Regular.ttf');
+  font-family: "BioRhyme";
+  src: url("./assets/fonts/BioRhyme/BioRhyme-Regular.ttf");
 }
 $menuColor: #ebebeb;
 
 /* Stylizacja paska przewijania dla wszystkich elementów i okna przeglądarki */
 ::-webkit-scrollbar {
-    width: 8px; /* szerokość paska przewijania */
+  width: 8px; /* szerokość paska przewijania */
 }
 
 ::-webkit-scrollbar-track {
-    background: #747c91; /* kolor tła ścieżki paska przewijania */
+  background: #3d3c3c; /* kolor tła ścieżki paska przewijania */
 }
-
+// #25263C
 ::-webkit-scrollbar-thumb {
-    background: #25263C; /* kolor paska przewijania */
+  background: #555; /* kolor paska przewijania */
+  //   background: #747c91; /* kolor paska przewijania */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* kolor paska przewijania przy najechaniu */
+  //   background: #555; /* kolor paska przewijania przy najechaniu */
+  background: #6b6e77; /* kolor paska przewijania przy najechaniu */
+}
+::-webkit-scrollbar-corner {
+  background: #3d3c3c; /* kolor tła ścieżki paska przewijania */
+  //   background: #25263c; /* kolor tła ścieżki paska przewijania */
 }
