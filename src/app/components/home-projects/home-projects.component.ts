@@ -34,7 +34,8 @@ export class HomeProjectsComponent implements OnInit {
       },
       {
         name: 'FrontendoweABC',
-        description: 'wskazówki dla początkujacych związane z html/css/js',
+        description:
+          'wskazówki dla początkujacych frontendowców związane z html/css/js',
         img: 'fABCN.png',
         technology: 'html/css/js',
         url: 'https://papaya-empanada-c964c9.netlify.app/',

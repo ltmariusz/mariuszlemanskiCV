@@ -1,13 +1,19 @@
 @import "/src/styles.scss";
+* {
+  box-sizing: border-box;
+}
 .all-projects {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
 .project {
   display: flex;
   align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  // flex-grow: 1;
 }
 
 .box-for-project {
@@ -18,8 +24,10 @@
   flex-direction: column;
   background-color: $menuColor;
   margin: 10px;
-  height: 240px;
-  width: 280px;
+  // height: 240px;
+  // height: 100%;
+  height: 100%;
+  width: 320px;
   // border: solid 5px #1f1f1f;
   justify-content: space-between;
   transition: transform 0.5s;
@@ -56,28 +64,34 @@
   background-image: url("../../../assets/pictures/code-example.png");
   background-repeat: no-repeat;
   background-size: 220%;
-}
-.project-name:hover .code-animation {
   animation: code-animation 4s steps(8) infinite;
+  animation-play-state: paused;
+}
+.box-for-project:hover .code-animation {
+  animation-play-state: running;
 }
 .project-description {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center; /* Dodane */
+  // flex-basis: 20%;
 }
 
 .project-image {
   width: 80px;
+  height: 80px;
 }
 
 .project-technology {
+  padding-bottom: 12px;
 }
 
 .box-for-project:hover {
-  transform: scale(1.02);
+  box-shadow: 0px 0px 20px rgb(40, 40, 40);
+  border: 10px solid #5f7b85;
 }
 
 .container-for-image {
@@ -86,10 +100,13 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  // border-top: solid 1px black;
+  // border-bottom: solid 1px black;
 }
 // poprawić animacje kodu
 @keyframes code-animation {
   100% {
-    top: -100%;
+    //
+    background-position: 0 -100.125px;
   }
 }
