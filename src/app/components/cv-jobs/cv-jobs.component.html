@@ -1,22 +1,33 @@
-<div *ngFor="let item of experience; let i = index" class="experience" [ngClass]="{ 'experience-second': i % 2 === 1 }">
+<div
+  *ngFor="let item of experience; let i = index"
+  class="experience"
+  [ngClass]="{ 'experience-second': i % 2 === 1 }"
+>
   <div class="dates-of-jobs">
     <!-- <div class="date-from-of-job">{{ item.dateFrom }}</div>
     <div class="date-to-of-job">{{ item.dateTo }}</div> -->
-    <div class="date-from-of-job">{{ item.dateFrom }} - 
-      {{ item.dateTo }}</div>
+    <div class="date-from-of-job">{{ item.dateFrom }} - {{ item.dateTo }}</div>
   </div>
   <div class="infromation-of-job">
-
     <div class="title-of-job">{{ item.title }}</div>
     <div class="company-of-job">{{ item.company }}</div>
     <div class="description-of-job">{{ item.description }}</div>
   </div>
-  <img *ngIf="isString(item.pictureName); else multipleImagesBlock" class="picture-of-job"
-    src="./../../../assets/pictures/experience-photos/{{ item.pictureName }}" />
+  <img
+    *ngIf="isString(item.pictureName); else multipleImagesBlock"
+    class="picture-of-job"
+    src="./../../../assets/pictures/experience-photos/{{ item.pictureName }}"
+  />
   <ng-template #multipleImagesBlock>
     <!-- <div > -->
-    <div *ngFor="let picture of getPictureNames(item.pictureName)" class="experience-photo-container">
-      <img src="./../../../assets/pictures/experience-photos/{{ picture }}" class="picture-of-few-jobs" />
+    <div
+      *ngFor="let picture of getPictureNames(item.pictureName)"
+      class="experience-photo-container"
+    >
+      <img
+        src="./../../../assets/pictures/experience-photos/{{ picture }}"
+        class="picture-of-few-jobs"
+      />
     </div>
     <!-- </div> -->
   </ng-template>
