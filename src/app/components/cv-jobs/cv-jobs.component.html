@@ -19,17 +19,14 @@
     src="./../../../assets/pictures/experience-photos/{{ item.pictureName }}"
   />
   <ng-template #multipleImagesBlock>
-    <!-- <div > -->
-    <div
-      *ngFor="let picture of getPictureNames(item.pictureName)"
-      class="experience-photo-container"
-    >
-      <img
-        src="./../../../assets/pictures/experience-photos/{{ picture }}"
-        class="picture-of-few-jobs"
-      />
+    <div class="experience-photo-container">
+      <div *ngFor="let picture of getPictureNames(item.pictureName)">
+        <img
+          src="./../../../assets/pictures/experience-photos/{{ picture }}"
+          class="picture-of-few-jobs"
+        />
+      </div>
     </div>
-    <!-- </div> -->
   </ng-template>
 
   <!-- <div class="object"></div> -->
